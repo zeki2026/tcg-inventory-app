@@ -28,5 +28,18 @@ services:
     depends_on:
       - db
 
+  frontend:
+    image: node:18-alpine
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "5173:5173"
+    command: npm run dev -- --host
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    depends_on:
+      - web
+
 volumes:
   postgres_data:

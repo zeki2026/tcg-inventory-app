@@ -4,7 +4,7 @@ from sqlalchemy.future import select
 from typing import List
 
 from app.database import get_db
-from app.models import Card, User
+from app.models.models import Card, User
 from app.schemas import CardCreate, CardResponse, CardUpdate
 from app.dependencies import get_current_user
 

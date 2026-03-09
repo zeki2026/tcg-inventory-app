@@ -15,11 +15,11 @@ class Settings(BaseSettings):
     DATABASE_URL: str | None = None
 
     # Security
-    SECRET_KEY: str = "YOUR_SUPER_SECRET_KEY_CHANGE_IN_PROD"
+    SECRET_KEY: str = "fPsoc$4AP7#eu3Ca"
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
 
-    # External Services
+    # External Services 
     TELEGRAM_BOT_TOKEN: str | None = None
     TELEGRAM_CHAT_ID: str | None = None
     AWS_ACCESS_KEY_ID: str | None = None

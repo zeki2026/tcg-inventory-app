@@ -1,7 +1,7 @@
 from fastapi import APIRouter, UploadFile, File, Depends, HTTPException
 from app.services.gemini_service import gemini_service
 from app.dependencies import get_current_user
-from app.models import User
+from app.models.models import User
 
 router = APIRouter()
 

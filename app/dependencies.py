@@ -4,7 +4,7 @@ from jose import JWTError, jwt
 from sqlalchemy.ext.asyncio import AsyncSession
 from app.database import get_db
 from app.schemas import TokenData
-from app.models import User
+from app.models.models import User
 from app.config import get_settings
 from sqlalchemy.future import select
 
